@@ -65,12 +65,14 @@ do
 
                 IFS=' '
                 read dummy inputPakFile <<< $line
+                IFS=
                 xml_data=""
                 ;;
 
             !outputPakFile*)
                 IFS=' '
                 read dummy outputPakFile <<< $line
+                IFS=
                 ;;
 
             !mbinFile*)
@@ -78,6 +80,7 @@ do
 
                 IFS=' '
                 read dummy mbinFile <<< $line
+                IFS=
 
                 if [ "$inputPakFile" = "" ]; then
                     error "you must define an inputPakFile!"
@@ -95,6 +98,8 @@ do
             cd*)
                 IFS=' '
                 read dummy xpath <<< $line
+                IFS=
+
                 if [ "$xpath" = "/" ]; then
                     xpath="/Data"
                 else
@@ -105,8 +110,11 @@ do
             *)
                 IFS='='
                 read name value <<< $line
+                IFS=
 
-                varxpath="${xpath}/Property[@name='$name']/@value"
+                varxpath="$(echo "${xpath}/Property[@name='$name']/@value"|sed "s/@name='\([\*0-9]*\)'/\1/g")"
+
+                echo ">>>${varxpath} = ${value}"
 
                 xml_data=$(printf "${xml_data}" | xmlstarlet ed --update "${varxpath}" --value ${value})
 
