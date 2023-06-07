@@ -295,6 +295,53 @@ Copy this files/folders into NMSModCreator.sh folder:
     
 ---
 
+### Definition File Example (Arrays and Properties without names):
+
+<pre style="background-color: rgb(230, 230, 230);">
+# Define source and output
+
+!inputPakFile NMSARC.globals.pak
+!outputPakFile ClearWater.pak
+!mbinFile GCWATERGLOBALS.GLOBAL.MBIN
+
+cd /WaterHeavyAirColour
+A=0.01
+
+cd /WaterDataDay/HeavyAir/Colours/*/Colour1
+A=0.025
+
+cd /WaterDataDay/HeavyAir/Colours/*/Colour2
+A=0.025
+
+#cd /WaterColourNight/WaterFogColourNear
+#A=0.025
+#cd /WaterColourNight/WaterFogColourFar
+#A=0.025
+#cd /WaterColourNight/WaterColourBase
+#A=0.025
+#cd /WaterColourNight/WaterColourAdd
+#A=0.025
+#cd /WaterColourNight/FoamColour
+#A=0.025
+
+cd /WaterColourNight/*
+A=0.025
+
+# First Property element on /WaterColourNight
+#cd /WaterColourNight/1
+#A=0.025
+# Second Property element on /WaterColourNight
+#cd /WaterColourNight/2
+#A=0.025
+
+</pre>
+
+### Full command:
+
+    $ ./NMSModCreator.sh SplinterGU_MultipleMods.def
+    
+---
+
 ### Contact:
 
 - Send me an email at [splintergu@gmail.com](splintergu@gmail.com) or [juanjoseponteprino@gmail.com](juanjoseponteprino@gmail.com)
