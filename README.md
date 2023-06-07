@@ -1,17 +1,17 @@
-#NMS Mod Builder (BASH version)
+# NMS Mod Builder (BASH version)
 
 This BASH script allows you to build mods for No Man's Sky in a simple way.
 
 You don't need to know how to code or something, you only need to make definition files.
 
-###Requeriments:
+### Requeriments:
 
 - xmlstarlet
 - psarc.exe
 - [MBINCompiler](https://github.com/monkeyman192/MBINCompiler)
 - wine
 
-###Instalation:
+### Instalation:
 
 Copy this files/folders into NMSModBuilder.sh folder:
 
@@ -19,11 +19,11 @@ Copy this files/folders into NMSModBuilder.sh folder:
 - MBINCompiler/ folder
 - \*.pak that you need use as input
 
-###Usage:
+### Usage:
 
     ./NMSModBuilder.sh <definition_file>
 
-###Definition File Example (Single MOD):
+### Definition File Example (Single MOD):
 
 <pre style="background-color: rgb(230, 230, 230);">
 
@@ -146,13 +146,13 @@ Copy this files/folders into NMSModBuilder.sh folder:
 
 </pre>
 
-###Full command:
+### Full command:
 
     $ ./NMSModBuilder.sh SplinterGU_StackX100.def
 
 ---
 
-###Definition File Example (Multiple MODs):
+### Definition File Example (Multiple MODs):
 
 <pre style="background-color: rgb(230, 230, 230);">
 
@@ -289,12 +289,12 @@ Copy this files/folders into NMSModBuilder.sh folder:
 
 </pre>
 
-###Full command:
+### Full command:
 
     $ ./NMSModBuilder.sh SplinterGU_MultipleMods.def
     
 ---
 
-###Contact:
+### Contact:
 
 - Send me an email at [splintergu@gmail.com](splintergu@gmail.com) or [juanjoseponteprino@gmail.com](juanjoseponteprino@gmail.com)
