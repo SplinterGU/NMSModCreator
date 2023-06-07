@@ -13,7 +13,7 @@ You don't need to know how to code or something, you only need to make definitio
 
 ### Instalation:
 
-Copy this files/folders into NMSModCreator.sh folder:
+Copy these files/folders into NMSModCreator.sh folder:
 
 - psarc.exe 
 - MBINCompiler/ folder
