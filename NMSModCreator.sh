@@ -114,8 +114,6 @@ do
 
                 varxpath="$(echo "${xpath}/Property[@name='$name']/@value"|sed "s/@name='\([\*0-9]*\)'/\1/g")"
 
-                echo ">>>${varxpath} = ${value}"
-
                 xml_data=$(printf "${xml_data}" | xmlstarlet ed --update "${varxpath}" --value ${value})
 
                 pending_to_save=1
