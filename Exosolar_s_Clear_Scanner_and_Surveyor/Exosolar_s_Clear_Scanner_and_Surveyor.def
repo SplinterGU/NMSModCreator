@@ -1,0 +1,15 @@
+##########################
+# This a bash version of this MOD
+# https://www.nexusmods.com/nomanssky/mods/1093
+
+!MBINCompiler ../MBINCompiler/MBINCompiler.exe
+!PSARC ../psarc.exe
+
+!outputPakFile Exosolar_s_Clear_Scanner_and_Surveyor.pak
+
+!addFile TEXTURES/LUT/FILTERS/BINOCULARS.DDS
+!addFile TEXTURES/LUT/FILTERS/SURVEYING1.DDS
+!addFile TEXTURES/LUT/FILTERS/MISSIONSURVEY.DDS
+!addFile TEXTURES/UI/HUD/BINOCULARS.DDS
+!addFile TEXTURES/UI/HUD/SURVEYING.DDS
+!addFile TEXTURES/UI/HUD/BINOCULARMISSION.DDS
