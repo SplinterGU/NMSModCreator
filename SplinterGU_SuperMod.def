@@ -1,7 +1,7 @@
 # Define source and output
 
 !inputPakFile NMSARC.globals.pak
-!outputPakFile SplinterGU_SuperMod.pak
+!outputPakFile build/SplinterGU_SuperMod.pak
 !mbinFile GCGAMEPLAYGLOBALS.GLOBAL.MBIN
 
 # stack limit High x100

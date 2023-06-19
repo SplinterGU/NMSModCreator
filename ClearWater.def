@@ -2,7 +2,8 @@
 # Define source and output
 
 !inputPakFile NMSARC.globals.pak
-!outputPakFile ClearWater.pak
+!outputPakFile build/ClearWater.pak
+
 !mbinFile GCWATERGLOBALS.GLOBAL.MBIN
 
 cd /WaterHeavyAirColour

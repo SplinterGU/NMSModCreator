@@ -1,7 +1,8 @@
 # Define Inputs and Output
 
 !inputPakFile NMSARC.globals.pak
-!outputPakFile SplinterGU_StackX100.pak
+!outputPakFile build/SplinterGU_StackX100.pak
+
 !mbinFile GCGAMEPLAYGLOBALS.GLOBAL.MBIN
 
 # Stack Limit High x100
@@ -117,7 +118,8 @@ UIPopup=100
 
 
 !inputPakFile NMSARC.globals.pak
-!outputPakFile SplinterGU_InstantScan.pak
+!outputPakFile build/SplinterGU_InstantScan.pak
+
 !mbinFile GCGAMEPLAYGLOBALS.GLOBAL.MBIN
 
 # Instant Scan
