@@ -6,8 +6,8 @@
 !MBINCompiler ../MBINCompiler/MBINCompiler.exe
 !PSARC ../psarc.exe
 
-!inputPakFile NMSARC.Precache.pak
-!outputPakFile CompanionPetUnlocker.pak
+!inputPakFile ../NMSARC.Precache.pak
+!outputPakFile ../build/CompanionPetUnlocker.pak
 
 !mbinFile MODELS/COMMON/ROBOTS/SENTINELMECH/ENTITIES/MECHARMOUR.ENTITY.MBIN
 !include petInteractionAction.inc
@@ -506,7 +506,7 @@ DefaultRidingAnim=RIDE_ANT_WALK
 ######################
 ### NMSARC.globals.pak
 
-!inputPakFile NMSARC.globals.pak
+!inputPakFile ../NMSARC.globals.pak
 !mbinFile GCCREATUREGLOBALS.MBIN
 
 cd /
@@ -542,5 +542,5 @@ PetEggModificationTime=1
 CanAlwaysLayEgg=True
 
 # more creatures
-PauseBetweenCreatureSpawnRequests=500
-CreatureUpdateRateMultiplier=2
+PauseBetweenCreatureSpawnRequests=200
+CreatureUpdateRateMultiplier=4

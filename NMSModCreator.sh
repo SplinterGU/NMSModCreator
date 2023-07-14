@@ -32,7 +32,7 @@ function save_if_pending() {
             wine ${MBINCompiler} ${exmlFileDOS[$i]} -y -q
             if [ $? -ne 0 ]; then
                 echo -e "\nError compiling ${mbinNames[$i]}\nAborting..."
-                #rm -Rf ${tmpdir}
+                rm -Rf ${tmpdir}
                 exit 1
             fi
             params+="${exmlFileDOS[$i]} "
@@ -67,7 +67,7 @@ function getMbin() {
     wine ${MBINCompiler} ${tmpdirDOS}/$1 -y --no-version -q
     if [ $? -ne 0 ]; then
         echo -e "\nError getting $1\nAborting..."
-        #rm -Rf ${tmpdir}
+        rm -Rf ${tmpdir}
         exit 1
     fi
 
@@ -261,4 +261,4 @@ process "${defFile}"
 
 save_if_pending
 
-#rm -Rf ${tmpdir}
+rm -Rf ${tmpdir}

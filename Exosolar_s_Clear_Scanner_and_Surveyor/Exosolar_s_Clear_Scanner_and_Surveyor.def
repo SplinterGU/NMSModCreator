@@ -5,7 +5,7 @@
 !MBINCompiler ../MBINCompiler/MBINCompiler.exe
 !PSARC ../psarc.exe
 
-!outputPakFile Exosolar_s_Clear_Scanner_and_Surveyor.pak
+!outputPakFile ../build/Exosolar_s_Clear_Scanner_and_Surveyor.pak
 
 !addFile TEXTURES/LUT/FILTERS/BINOCULARS.DDS
 !addFile TEXTURES/LUT/FILTERS/SURVEYING1.DDS
